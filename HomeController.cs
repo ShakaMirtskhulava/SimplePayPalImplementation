@@ -36,6 +36,12 @@ public class HomeController : Controller
 
         //Retrive the payment's transactions for details
         var transactions = executedPayment.transactions;
+        var currency = transactions[0].amount.currency;
+        var subtotal = transactions[0].amount.details.subtotal;
+        var tax = transactions[0].amount.details.tax;
+        var description = transactions[0].description;
+        var email = executedPayment.payer.payer_info.email;
+        var merchant_id = executedPayment.payer.payer_info.payer_id;
 
         return View(transactions);
     }

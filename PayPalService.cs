@@ -1,7 +1,7 @@
 public class PayPalService : IPayPalService
 {
-    private readonly string _clientId = "AfKluVTBQWxPSrtjTAPNML-CF_R8XJ4RCPeaO6BQhhl6-LiDjNRfnH3Zj75E4UJya-yOa-uK2ifmweIE";
-    private readonly string _clientSecret = "EMG2YvZTEpgRMy8a5UyOOPuXNrF1QY-5z9b4c5gDPNTfPRJbaPtrfXd48jCmIRUYvKij6HA8mrySD1Zn";
+    private readonly string _clientId = "ClientId";
+    private readonly string _clientSecret = "ClientSecret";
     private readonly Dictionary<string, string> _config;
 
 
